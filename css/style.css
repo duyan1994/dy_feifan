@@ -1,0 +1,220 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	background-color: #ffffff;
+	font-size: 14px;
+	font-family: "微软雅黑";
+	color: #333;
+}
+
+/*居中的容器*/
+.w{
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+/*页面里的a标签的颜色以及样式*/
+a{
+	color: #333;
+	text-decoration: none;
+}
+/*左右浮动，恢复父容器塌陷高度*/
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.clear:after{
+	display: block;
+	content: "";
+	clear: both;
+}
+
+/*top*/
+.top{
+	min-width: 1200px;
+     height: 38px;
+     background-color: #e3effd;
+     font-size: 12px;
+}
+.top .nav{
+	line-height: 38px;
+}
+.top .nav li{
+	list-style: none;
+	float: left;
+	padding: 0px 11px;
+	position: relative;
+}
+.top .nav li:hover{
+	background-color: gainsboro;
+}
+.top .nav li:hover span:before{
+	content: "\f106";
+}
+.top .nav li:hover .sub-nav{
+	display: block;
+}
+.top .nav li span{
+	color: #dd2c40;
+	display: inline-block;
+	padding: 0px 5px;
+}
+/*二级菜单*/
+.top .sub-nav{
+	width: 90px;
+	position: absolute;
+	top: 38px;
+	left: 0px;
+	background-color: gainsboro;
+	display: none;
+	text-align: center;
+}
+.top .sub-nav li{
+	float: none;
+}
+.top .sub-nav li:hover{
+	background-color: #e3effd;
+}
+.top .sub-nav li:hover a{
+	color: #dd2c40;
+}
+/*wechat*/
+.top .wechat{
+	line-height: 38px;
+	
+}
+.top .wechat li{
+	list-style: none;
+	height: 38px;
+	position: relative;
+	padding-top: 9px;
+	box-sizing: border-box;
+}
+.top .wechat li:hover{
+	background-color:#e3effd ;
+}
+.top .wechat li:hover .code{
+	display: block;
+}
+.top .wechat li .code{
+	position: absolute;
+	top: 38px;
+	right: 0px;
+	display: none;
+	width: 110px;
+	height: 110px;
+}
+.top .wechat li .code img{
+	width: inherit;
+	height:inherit;
+}
+/*feifanlogo*/
+.header{
+	/*min-width: 1200px;*/
+	height: 114px;
+	background-color: yellowgreen;
+	padding: 22px 0px;
+	box-sizing: border-box;
+}
+.header .logo{
+	height: 70px;
+}
+.header .logo img{
+	height: 70px;
+}
+.header .slogan{
+	line-height: 70px;
+	margin-left: 30px;
+	font-size: 16px;
+}
+.header .schoolphone{
+	height: 70px;
+	line-height: 70px;
+}
+.header .schoolphone ul{}
+.header .schoolphone ul li{
+	list-style: none;
+	float: left;
+	margin-right: 35px;
+	font-size: 16px;
+}
+.header .schoolphone ul li span{
+	margin-right: 10px;
+	font-size: 30px;
+	color: #f6c374;
+}
+.header .schoolphone ul li:last-child{
+	margin-right: 0px;
+	font-size: 18px;
+}
+.header .schoolphone ul li:last-child span{
+	color: #e22829;
+}
+/*banner*/
+
+.banner{
+	width: 1200px;
+	height: 350px;
+	background-color: goldenrod;
+	position: relative;
+}
+
+.banner .images-lunbo li{
+	display: none;
+	height: 350px;
+	list-style: none;
+	position: absolute;
+}
+.banner .images-lunbo li img{
+	width: 1200px;
+	height: 350px;
+}
+.banner .images-lunbo li:first-child{
+	display: block;
+}
+.banner .images-lunbo li img {
+	height: 350px;
+}	
+.banner .points{
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+}
+.banner .points li{
+	float: left;
+	width: 12px;
+	height: 12px;
+	margin: 0px 6px;
+	border: 1px solid white;
+	list-style: none;
+	border-radius: 50%;
+}	
+.banner .points li.active{
+	background-color: #da2b28;
+	border: 1px solid #da2b28;
+}	
+/*课程导航*/
+.lesson{
+	height: 456px;
+	background-color: greenyellow;
+}
+.lesson .nav-lesson{
+	width: 220px;
+	height: inherit;
+	background-color: royalblue;
+}
+.lesson .news{
+	width: 730px;
+	height: inherit;
+	background-color: wheat;
+	margin-left: 20px;
+}
+.lesson .hotlesson{
+	width: 200px;
+	height: inherit;
+	background-color: brown;
+}
