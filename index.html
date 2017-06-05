@@ -169,6 +169,7 @@
 					$(".banner .points").append("<li></li>")
 				}
 				var aPoints = $(".banner .points li");
+				$(".points").css("margin-left","-"+($(".points").width()/2)+"px");
 				aPoints.eq(0).addClass("active");
 				var index = 0;
 				setInterval(function(){
