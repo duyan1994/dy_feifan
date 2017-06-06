@@ -201,20 +201,128 @@ a{
 .lesson{
 	height: 456px;
 	background-color: greenyellow;
+	position: relative;
 }
 .lesson .nav-lesson{
 	width: 220px;
 	height: inherit;
 	background-color: royalblue;
+	position: absolute;
+	top: 0px;
+	left: 0px;
 }
 .lesson .news{
-	width: 730px;
+	
 	height: inherit;
 	background-color: wheat;
-	margin-left: 20px;
+	padding-left:240px;
+	padding-right: 228px;
 }
 .lesson .hotlesson{
 	width: 200px;
 	height: inherit;
 	background-color: brown;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+/*课程导航左侧nav-lesson*/
+.lesson .nav-lesson li{
+	height: 45px;
+	border-bottom: 1px solid #d8d8d8;
+	border-left: 1px solid #d8d8d8;
+	border-right: 1px solid #d8d8d8;
+	box-sizing: border-box;
+	line-height: 45px;
+	list-style: none;
+}
+.lesson .nav-lesson li:first-child{
+	border-left:none;
+	border-right:none;
+	background-color: #dd2726;
+	color: #FFFFFF;
+}
+.lesson .nav-lesson li:first-child{
+	font-size: 16px;
+}
+.lesson .nav-lesson li:first-child span{
+	margin: 0px 18px;
+	font-size: 12px;
+}
+.lesson .nav-lesson li p{
+	display: inline-block;
+	position: absolute;
+}
+.lesson .nav-lesson li p.f1{
+	font-size: 14px;
+	color: #392934;
+	left: 20px;
+}
+.lesson .nav-lesson li p.f2{
+	font-size: 12px;
+	color: #9b9a96;
+	left: 110px;
+}
+.lesson .nav-lesson li p.f3{
+	font-size: 12px;
+	color: #9b9a96;
+	left: 156px;
+}
+.lesson .nav-lesson li .nav-goodlist{
+	width: 622px;
+	height: 405px;
+	border: 1px solid #ddd;
+	position: absolute;
+	left: 220px;
+	top: 45px;
+	box-sizing: border-box;
+	padding-top: 20px;
+	background-color: green;
+}
+.lesson .nav-lesson li .nav-goodlist li{
+	list-style: none;
+	width: 290px;
+	height: 62px;
+	padding-left: 20px;
+	box-sizing: border-box;
+	float: left;
+	margin-left: 20px;
+	font-size: 14px;
+}
+.lesson .nav-lesson li .nav-goodlist li:hover a{
+	color:#dd2c40 ;
+}
+/*news*/
+.lesson .news .news-top{
+	width: inherit;
+	height: 45px;
+	background-color: cyan;
+	font-size: 16px;
+	line-height: 45px;
+}
+.lesson .news .news-top li{
+	list-style: none;
+	float: left;
+	padding: 0px 18px;
+	margin-right: 78px;
+}
+.lesson .news .news-top li:hover{
+	color: #dd1d28;
+	border-bottom: 2px solid #db2728;
+}
+.lesson .news .news-top li .news-content{
+	width: 732px;
+	height: 405px;
+	background-color: #008000;
+	position: absolute;
+	top: 45px;
+	left: 240px;
+	padding: 16px 0px;
+	box-sizing: border-box;
+}
+.lesson .news .news-top li .news-content
+.lesson .news .news-top li .news-content img{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
 }
