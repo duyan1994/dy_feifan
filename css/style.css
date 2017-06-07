@@ -202,7 +202,7 @@ a{
 /*课程导航*/
 .lesson{
 	height: 456px;
-	background-color: greenyellow;
+	/*background-color: greenyellow;*/
 	position: relative;
 	margin-top: 48px;
 }
@@ -453,4 +453,112 @@ a{
 }
 .lesson .hotlesson .kex .kex1 p a{
 	color: gainsboro;
+}
+/*新开班newclass*/
+.newclass{
+	height: 612px;
+	background-color: greenyellow;
+	padding-top: 36px;
+	box-sizing: border-box;
+}
+.newclass .latestclass{
+	width: inherit;
+	height: 48px;
+	background-color: goldenrod;
+	line-height: 48px;
+	position: relative;
+	border-bottom: 1px solid #e1e1e1;
+}
+.newclass .latestclass h3{
+	display: inline-block;
+	font-family: "微软雅黑";
+	font-size: 20px;
+	padding-left: 5px;
+	line-height: 48px;
+}
+.newclass .latestclass ul{
+	display: inline-block;
+	position: absolute;
+	left: 250px;
+	font-size: 14px;
+}
+.newclass .latestclass ul li{
+	float: left;
+	list-style: none;
+	padding: 0px 16px;
+}
+.newclass .latestclass ul li:last-child{
+	margin-right: 0px;
+}
+.newclass .latestclass .liner{
+	width: 100px;
+	height: 2px;
+	background-color: #db272a;
+	position: absolute;
+	left: 235px;
+	bottom: -1px;
+}
+/*中间图片box*/
+.newclass .classpic{
+	height: 300px;
+	width: inherit;
+	background-color: palevioletred;
+	
+}
+.newclass .classpic ul{
+	height: 300px;
+	width: inherit;
+	background-color: #0000FF;
+	display: none;
+}
+.newclass .classpic ul:first-child{
+	display: block;
+}
+.newclass .classpic ul li{
+	float: left;
+	width: 298px;
+	height: 300px;
+	margin-right: 2.5px;
+	background-color: yellow;
+	list-style: none;
+	position: relative;
+}
+.newclass .classpic ul li:last-child{
+	float: right;
+	margin-right: 0px;
+}
+.newclass .classpic li .n1{
+	width: 298px;
+	height: 274px;
+	background-color: blue;
+	position: absolute;
+	top: 12px;
+	padding: 14px;
+	box-sizing: border-box;
+	border: 1px solid gainsboro;
+}
+.newclass .classpic li .n1 img{
+	width: 270px;
+	height: 180px;
+}
+.newclass .classpic li .n1 .nf1{
+	font-size: 16px;
+	color: #333;
+}
+.newclass .classpic li .n1 .nf2{
+	position: absolute;
+	left: 14px;
+	bottom: 14px;
+	font-size: 12px;
+	color: #929292;
+}
+.newclass .classpic li .n1 .nf3{
+	position: absolute;
+	right: 14px;
+	bottom: 14px;
+	font-size: 12px;
+	color: #929292;
+}
+.newclass .classpic li .n1 .nf3 a:hover{
+	color: yellowgreen;
 }

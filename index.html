@@ -627,7 +627,135 @@
 			</div>
 			
 		</div>
-		
+		<div class="newclass w">
+			<div class="latestclass">
+				<h3>最新开班</h3>
+				<ul>
+					<li>平面UI</li>
+					<li>室内景观</li>
+					<li>网页设计</li>
+					<li>淘宝美工</li>
+					<li>电商网销</li>
+					<li>机械模具</li>
+					<li>服装设计</li>
+					<li>影视美术</li>
+					<li>网络工程</li>
+				</ul>
+				<div class="liner"></div>
+			</div>
+			<div class="classpic">
+				<ul style="background-color: red;">
+					<li>
+						<div class="n1">
+							<img src="img/111.jpg" />
+							<p class="nf1"><a href="#">平面设计软件全科班(白天班)</a></p>
+							<p class="nf2">优惠价：3880元</p>
+							<p class="nf3"><a href="#">查看</a> ></p>
+						</div>
+					</li>
+					<li>
+						<div class="n1">
+							<img src="img/112.jpg" />
+							<p class="nf1"><a href="#">平面设计软件全科班(白天班)</a></p>
+							<p class="nf2">优惠价：3880元</p>
+							<p class="nf3"><a href="#">查看</a> ></p>
+						</div>
+					</li>
+					<li>
+						<div class="n1">
+							<img src="img/113.jpg" />
+							<p class="nf1"><a href="#">平面设计软件全科班(白天班)</a></p>
+							<p class="nf2">优惠价：3880元</p>
+							<p class="nf3"><a href="#">查看</a> ></p>
+						</div>
+					</li>
+					<li>
+						<div class="n1">
+							<img src="img/114.jpg" />
+							<p class="nf1"><a href="#">平面设计软件全科班(白天班)</a></p>
+							<p class="nf2">优惠价：3880元</p>
+							<p class="nf3"><a href="#">查看</a> ></p>
+						</div>
+					</li>
+				</ul>
+				<ul style="background-color: orange;">
+					<li>
+					    <div class="n1">
+							<img src="img/121.jpg" />
+							<p class="nf1"><a href="#">平面设计软件全科班(白天班)</a></p>
+							<p class="nf2">优惠价：3880元</p>
+							<p class="nf3"><a href="#">查看</a> ></p>
+						</div>
+					</li>
+					<li>
+						<div class="n1">
+							<img src="img/122.jpg" />
+							<p class="nf1"><a href="#">平面设计软件全科班(白天班)</a></p>
+							<p class="nf2">优惠价：3880元</p>
+							<p class="nf3"><a href="#">查看</a> ></p>
+						</div>
+					</li>
+					<li>
+						<div class="n1">
+							<img src="img/123.jpg" />
+							<p class="nf1"><a href="#">平面设计软件全科班(白天班)</a></p>
+							<p class="nf2">优惠价：3880元</p>
+							<p class="nf3"><a href="#">查看</a> ></p>
+						</div>
+					</li>
+					<li>
+					    <div class="n1">
+							<img src="img/124.jpg" />
+							<p class="nf1"><a href="#">平面设计软件全科班(白天班)</a></p>
+							<p class="nf2">优惠价：3880元</p>
+							<p class="nf3"><a href="#">查看</a> ></p>
+						</div>
+					</li>
+				</ul>
+				<ul style="background-color: olivedrab;">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<ul style="background-color: blueviolet;">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<ul style="background-color: royalblue;">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<ul style="background-color: cornflowerblue;">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<ul style="background-color: deepskyblue;">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<ul style="background-color: aquamarine;">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<ul style="background-color: brown;">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+		</div>
 		
 		
 		
@@ -665,6 +793,22 @@
 				$(".lesson .hotlesson .kex").mouseleave(function(){
 					$(this).children("div").css("height","30px");
 					$(this).children("div").children("p").css("display","none");
+				});
+				
+				//新开班头部liner的动画效果
+				$(".newclass .latestclass li").hover(function(){
+					var index = $(this).index();
+					var aLioffset = $(this).offset().left;
+					var aLiwidth = $(this).width();
+					var left = aLioffset+aLiwidth/2-150 ;
+					console.log(left);
+				    $(":animated").stop(true,true);
+					$(".newclass .latestclass .liner").animate({
+						left:left+"px"
+					},200,function(){});
+					
+					//随li切换图片
+					$(".newclass .classpic ul").hide().eq(index).show();
 				});
 				
 			});
