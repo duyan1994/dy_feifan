@@ -57,6 +57,8 @@ a{
 }
 .top .nav li:hover .sub-nav{
 	display: block;
+	z-index: 99;
+	width: 100px;
 }
 .top .nav li span{
 	color: #dd2c40;
@@ -202,11 +204,12 @@ a{
 	height: 456px;
 	background-color: greenyellow;
 	position: relative;
+	margin-top: 48px;
 }
 .lesson .nav-lesson{
 	width: 220px;
 	height: inherit;
-	background-color: royalblue;
+	/*background-color: royalblue;*/
 	position: absolute;
 	top: 0px;
 	left: 0px;
@@ -221,19 +224,19 @@ a{
 .lesson .hotlesson{
 	width: 200px;
 	height: inherit;
-	background-color: brown;
+	/*background-color: greenyellow;*/
 	position: absolute;
 	top: 0px;
 	right: 0px;
 }
 /*课程导航左侧nav-lesson*/
 .lesson .nav-lesson li{
-	height: 45px;
+	height: 41px;
 	border-bottom: 1px solid #d8d8d8;
 	border-left: 1px solid #d8d8d8;
 	border-right: 1px solid #d8d8d8;
 	box-sizing: border-box;
-	line-height: 45px;
+	line-height: 41px;
 	list-style: none;
 }
 .lesson .nav-lesson li:first-child{
@@ -253,6 +256,14 @@ a{
 	display: inline-block;
 	position: absolute;
 }
+/*.lesson .nav-lesson li:not(:first-child).hover {
+	background-color: gainsboro;
+}*/
+.lesson .nav-lesson li:not(:first-child):hover{
+	background-color: gainsboro;
+	
+}
+
 .lesson .nav-lesson li p.f1{
 	font-size: 14px;
 	color: #392934;
@@ -263,21 +274,33 @@ a{
 	color: #9b9a96;
 	left: 110px;
 }
+.lesson .nav-lesson li p.f2:hover{
+	color: #dd2726;
+}
 .lesson .nav-lesson li p.f3{
 	font-size: 12px;
 	color: #9b9a96;
 	left: 156px;
 }
+.lesson .nav-lesson li p.f3:hover{
+	color: #dd2726;
+}
 .lesson .nav-lesson li .nav-goodlist{
 	width: 622px;
-	height: 405px;
+	height: 409px;
 	border: 1px solid #ddd;
 	position: absolute;
 	left: 220px;
-	top: 45px;
+	top: 41px;
 	box-sizing: border-box;
 	padding-top: 20px;
-	background-color: green;
+	background-color: #fff;
+	z-index: 9999;
+	display: none;
+}
+.lesson .nav-lesson li:hover .nav-goodlist{
+	display: block;
+	z-index: 9999;
 }
 .lesson .nav-lesson li .nav-goodlist li{
 	list-style: none;
@@ -289,6 +312,9 @@ a{
 	margin-left: 20px;
 	font-size: 14px;
 }
+.lesson .nav-lesson li .nav-goodlist li:hover{
+	background-color: white;
+}
 .lesson .nav-lesson li .nav-goodlist li:hover a{
 	color:#dd2c40 ;
 }
@@ -296,9 +322,10 @@ a{
 .lesson .news .news-top{
 	width: inherit;
 	height: 45px;
-	background-color: cyan;
+	/*background-color: cyan;*/
 	font-size: 16px;
 	line-height: 45px;
+	border-bottom: 2px solid #d8d8d8;
 }
 .lesson .news .news-top li{
 	list-style: none;
@@ -310,19 +337,120 @@ a{
 	color: #dd1d28;
 	border-bottom: 2px solid #db2728;
 }
+.lesson .news .news-top li:hover a{
+	color:#db2728 ;
+}
+.lesson .news .news-top li:hover .news-content{
+	display: block;
+}
 .lesson .news .news-top li .news-content{
 	width: 732px;
 	height: 405px;
-	background-color: #008000;
+	/*background-color: #008000;*/
 	position: absolute;
 	top: 45px;
 	left: 240px;
 	padding: 16px 0px;
 	box-sizing: border-box;
+	display: none;
 }
-.lesson .news .news-top li .news-content
+.lesson .news .news-top li .news-content .rows{
+	width: 732px;
+	height: 66px;
+	margin-bottom: 40px;
+	/*background-color: palegreen;*/
+}
+.lesson .news .news-top li .news-content .rows:last-child{
+	margin-bottom: 0px;
+}
+.lesson .news .news-top li .news-content .rows .info{
+	width: 340px;
+	height: 66px;
+}
+.lesson .news .news-top li .news-content .rows .imagess{
+	width: 50px;
+	height: inherit;
+	position: relative;
+}
 .lesson .news .news-top li .news-content img{
 	width: 50px;
 	height: 50px;
 	border-radius: 50%;
+}
+.lesson .news .news-top li .news-content .rows .imagess p{
+	text-align: center;
+	font-size: 12px;
+	line-height: 16px;
+	position: absolute;
+	top: 50px;
+	left: 10px;
+	color: #333333;
+}
+.lesson .news .news-top li .news-content .rows .info .information{
+	width: 290px;
+	height: inherit;
+	/*background-color: red;*/
+	padding-left: 20px;
+	box-sizing: border-box;
+}
+.lesson .news .news-top li .news-content .rows .info .information span{
+	display: block;
+	font-size: 14px;
+	line-height: 1.5em;
+	color: #1f313d;
+}
+.lesson .news .news-top li .news-content .rows .info .information span:hover{
+	color: #dd2726;
+}
+.lesson .news .news-top li .news-content .rows .info .information p{
+	font-size: 12px;
+	line-height: 2em;
+	color: #b0afad;
+}
+/*.lesson .news .news-top li .news-content .rows .info .information p:hover{
+	color: #f6c374;
+}*/
+/*右侧hotlesson*/
+.lesson .hotlesson p{
+	font-size: 16px;
+	line-height: 45px;
+	text-align: center;
+}
+.lesson .hotlesson .kex{
+	width: 200px;
+	height: 130px;
+	margin-bottom: 10px;
+	position: relative;
+}
+.lesson .hotlesson .kex:last-child{
+	margin-bottom: 0px;
+}
+.lesson .hotlesson .kex img{
+	width: 200px;
+	height: 130px;
+}
+.lesson .hotlesson .kex .kex1{
+	width: inherit;
+	height: 30px;
+	background-color: rgba(0,0,0,0.6);
+	position: absolute;
+	bottom: 0px;
+	z-index: 99;
+	
+	padding-left: 12px;
+	padding-top: 5px;
+	box-sizing: border-box;
+	
+}
+.lesson .hotlesson .kex .kex1 a{
+	color: #fff;
+	font-size: 12px;
+}
+.lesson .hotlesson .kex .kex1 p{
+	text-align: left;
+	line-height: 1.5em;
+	display: none;
+}
+.lesson .hotlesson .kex .kex1 p a{
+	color: gainsboro;
 }
