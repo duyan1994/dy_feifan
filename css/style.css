@@ -295,12 +295,12 @@ a{
 	box-sizing: border-box;
 	padding-top: 20px;
 	background-color: #fff;
-	z-index: 9999;
+	z-index: 99;
 	display: none;
 }
 .lesson .nav-lesson li:hover .nav-goodlist{
 	display: block;
-	z-index: 9999;
+	z-index: 99;
 }
 .lesson .nav-lesson li .nav-goodlist li{
 	list-style: none;
@@ -519,7 +519,7 @@ a{
 	width: 298px;
 	height: 300px;
 	margin-right: 2.5px;
-	background-color: yellow;
+	/*background-color: yellow;*/
 	list-style: none;
 	position: relative;
 }
@@ -530,11 +530,14 @@ a{
 .newclass .classpic li .n1{
 	width: 298px;
 	height: 274px;
-	background-color: blue;
+	/*background-color: blue;*/
 	position: absolute;
 	top: 12px;
 	padding: 14px;
 	box-sizing: border-box;
+	
+}
+.newclass .classpic li .n1:hover{
 	border: 1px solid gainsboro;
 }
 .newclass .classpic li .n1 img{
@@ -561,4 +564,97 @@ a{
 }
 .newclass .classpic li .n1 .nf3 a:hover{
 	color: yellowgreen;
+}
+/*开班课程列表*/
+.newclass .class-table{
+	height: 227px;
+	background-color: royalblue;
+	
+}
+.newclass .class-table .newinfo{
+	height: 185px;
+	background-color: gold;
+	position: relative;
+}
+.newclass .class-table .newinfo table{
+	width: 576px;
+	height: 185px;
+	position: absolute;
+	text-align: center;
+}
+.newclass .class-table .newinfo table.c1{
+	left: 8px;
+}
+.newclass .class-table .newinfo table.c2{
+	left: 618px;
+}
+.newclass .class-table .newinfo table tr:first-child
+{
+	height: 38px;
+	line-height: 38px;
+	font-size: 14px;
+	/*border-bottom: 1px solid #dedede;*/
+}
+.newclass .class-table .newinfo table tr{
+	font-size: 12px;
+	line-height: 30px;
+}
+.newclass .class-table .newinfo table tr td:first-child{
+	text-align: left;
+}
+.newclass .class-table .newinfo table td span{
+	color: #52bbf5;
+}
+.newclass .class-table .newinfo table td.oldprice{
+	text-decoration: line-through;
+}
+.newclass .class-table .newinfo table td.price{
+	color: #d83047;
+}
+/*已报名学生滚动条*/
+.newclass .class-table .newregister{
+	width: inherit;
+	height: 42px;
+	background-color: yellowgreen;
+	position: relative;
+	font-size: 14px;
+	border-bottom: 1px solid gray;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.newclass .class-table .newregister .todayr{
+	width: 106px;
+	height: 42px;
+	line-height: 42px;
+	text-align: center;
+	background-color: white;
+	border-bottom: 1px solid #d83047;
+	box-sizing: border-box;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 99;
+}
+.newclass .class-table .newregister .todayr span.fa{
+	color:#d83047 ;
+	font-size: 22px;
+	margin: 0px 4px;
+}
+.newclass .class-table .newregister ul{
+	position: absolute;
+	left: 0px;
+	line-height: 42px;
+	width: 20000px;
+	
+}
+.newclass .class-table .newregister li{
+	float: left;
+	list-style: none;
+	margin: 0px 15px;
+	color: #cd2a21;
+}
+.newclass .class-table .newregister li span{
+	color: #333;
+	display: inline-block;
+	padding: 0px 5px;
 }
