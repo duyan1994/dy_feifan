@@ -658,3 +658,151 @@ a{
 	display: inline-block;
 	padding: 0px 5px;
 }
+/*师资力量*/
+.teacher{
+	height: 350px;
+	background-color: palegreen;
+	padding-top: 42px;
+	box-sizing: border-box;
+}
+.teacher .teacherpower{
+	height: 64px;
+	line-height: 64px;
+	background-color: #0000FF;
+	font-size: 16px;
+}
+.teacher .teacherpower p.left{
+	margin-left: 4px;
+}
+/*教师图片*/
+.teacher .teacherpic{
+	height: 244px;
+	background-color: yellowgreen;
+
+}
+.teacher .teacherpic ul{
+	display: none;
+}
+.teacher .teacherpic ul:first-child{
+	display: block;
+}
+.teacher .teacherpic ul li{
+	list-style: none;
+	float: left;
+	width: 270px;
+	height: 240px;
+	margin-right: 40px;
+	background-color: yellow;
+	position: relative;
+	
+}
+.teacher .teacherpic ul li:last-child{
+	margin-right: 0px;
+}
+.teacher .teacherpic ul li img{
+	width: 270px;
+	height: 180px;
+}
+.teacher .teacherpic ul li p.t1{
+	font-size: 14px;
+	color: #333;
+	position: absolute;
+	bottom: 30px;
+}
+.teacher .teacherpic ul li p.t2{
+	font-size: 12px;
+	color: #9a9a9a;
+	position: absolute;
+	bottom: 0px;
+}
+.teacher .teacherpic ul li span{
+	font-size: 20px;
+	color: orangered;
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+}
+
+
+
+/*学员作品*/
+.students{
+	height: 394px;
+	background-color: gray;
+	padding-top: 60px;
+	box-sizing: border-box;
+}
+.students .products{
+	height: 36px;
+	background-color: blue;
+	line-height: 36px;
+	position: relative;
+	border-bottom: 1px solid grey;
+	box-sizing: border-box;
+}
+.students .products p{
+	margin-left: 4px;
+	font-size: 16px;
+}
+.students .products ul {
+	position: relative;
+	left: 312px;
+}
+.students .products ul li{
+	list-style: none;
+	float: left;
+	padding: 0px 18px;
+}
+.students .products ul li a{
+	font-size: 14px;
+	color: #545454;
+}
+.students .productshow{
+	height: 298px;
+	background-color: yellowgreen;
+	padding-top: 30px;
+	box-sizing: border-box;
+}
+.students .productshow ul {
+	display: none;
+}
+.students .productshow ul:first-child {
+	display: block;
+}
+.students .productshow ul li{
+	list-style: none;
+	float: left;
+	width: 270px;
+	height: 268px;
+	margin-right: 40px;
+	background-color: red;
+	padding: 8px;
+	box-sizing: border-box;
+	position: relative;
+}
+.students .productshow ul li:last-child{
+	margin-right: 0px;
+}
+.students .productshow ul li img{
+	width: 254px;
+	height: 180px;
+}
+.students .productshow ul li p.p1{
+	font-size: 14px;
+	color: #333;
+	position: absolute;
+	bottom: 30px;
+}
+.students .productshow ul li p.p2{
+	font-size: 12px;
+	color: #9a9a9a;
+	position: absolute;
+	bottom: 5px;
+}
+.students .productshow ul li span{
+	font-size: 12px;
+	color: #9a9a9a;
+	position: absolute;
+	right: 0px;
+	bottom: 5px;
+}

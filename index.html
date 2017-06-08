@@ -1086,8 +1086,144 @@
 		        </div>
 		    </div>
 		</div>
-		
-		
+		<div class="teacher w">
+			<div class="teacherpower">
+				<p class="left">师资力量</p>
+			</div>
+			<div class="teacherpic">
+				<ul>
+					<li>
+						<img src="img/113.jpg" />
+						<p class="t1">余老师</p>
+						<p class="t2">室内设计高级讲师</p>
+						<span class="fa fa-thumbs-o-up "></span>
+					</li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<ul>
+					<li>
+						<img src="img/111.jpg" />
+					</li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<ul>
+					<li>
+						<img src="img/112.jpg" />
+					</li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<ul>
+					<li>
+						<img src="img/121.jpg" />
+					</li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<ul>
+					<li>
+						<img src="img/123.jpg" />
+					</li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<ul>
+					<li>
+						<img src="img/124.jpg" />
+					</li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<ul>
+					<li>
+						<img src="img/1200-350-1-1.jpg" />
+					</li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<ul>
+					<li>
+						<img src="img/1200-350-1.jpg" />
+					</li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<ul>
+					<li>
+						<img src="img/1200-350-2.jpg" />
+					</li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+		</div>
+		<div class="students w">
+			<div class="products">
+				<p class="left">学员作品</p>
+				<ul>
+					<li><a href="#">UI交互设计</a></li>
+					<li><a href="#">网页设计</a> </li>
+					<li><a href="#">淘宝美工</a> </li>
+					<li><a href="#">室内设计</a> </li>
+					<li><a href="#">机械模具</a></li>
+					<li><a href="#">摄影作品</a> </li>
+				</ul>
+			</div>
+			<div class="productshow">
+				<ul>
+					<li>
+						<img src="img/122.jpg" />
+						<p class="p1">XXX学员作品</p>
+						<p class="p2">指导老师:武老师</p>
+						<span class=""><a href="#">查看</a> ></span>
+					</li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+		</div>
 		
 		
 		
@@ -1163,7 +1299,16 @@
 				});
 				},10000);
 				
-				
+				//师资力量 定时器
+				 var index1 = 0 ;
+				 setInterval(function(){
+				 	var aUlTeacher = $(".teacher .teacherpic ul");
+				 	aUlTeacher.eq(index1).hide();
+				 	index1 = (index1+1) % aUlTeacher.length;
+				 	aUlTeacher.eq(index1).show();
+				 },1000,function(){});
+				 
+				 
 				
 			});
 		</script>
