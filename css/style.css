@@ -670,10 +670,24 @@ a{
 	line-height: 64px;
 	background-color: #0000FF;
 	font-size: 16px;
+	
 }
 .teacher .teacherpower p.left{
 	margin-left: 4px;
 }
+.teacher .teacherpower .change span{
+	margin: 0px 5px;
+}
+.teacher .teacherpower .change span.fa-caret-left , .change span.fa-caret-right{
+	color:orangered;
+}
+.teacher .teacherpower .change span.fa-arrow-circle-o-right{
+	color: darkgray;
+}
+.teacher .teacherpower .change span a:hover{
+	color:#cd2a21 ;
+}
+
 /*教师图片*/
 .teacher .teacherpic{
 	height: 244px;
@@ -694,11 +708,26 @@ a{
 	margin-right: 40px;
 	background-color: yellow;
 	position: relative;
+	overflow: hidden;
 	
 }
 .teacher .teacherpic ul li:last-child{
 	margin-right: 0px;
 }
+.teacher .teacherpic ul li .mask {
+	width: 270px;
+	height: 180px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-color: rgba(0,0,0,0.6);
+	padding: 40px 10px;
+	color: white;
+	line-height: 1.5em;
+	box-sizing: border-box;
+	display: none;
+}
+
 .teacher .teacherpic ul li img{
 	width: 270px;
 	height: 180px;
