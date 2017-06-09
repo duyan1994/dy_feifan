@@ -961,11 +961,11 @@ a{
 /*非凡荣誉*/
 .honor{
 	height: 554px;
-	background-color: yellowgreen;
+	/*background-color: yellowgreen;*/
 }
 .honor .honor-text{
 	height: 64px;
-	background-color: palegoldenrod;
+	/*background-color: palegoldenrod;*/
 	position: relative;
 }
 .honor .honor-text p{
@@ -985,12 +985,37 @@ a{
 	height: 245px;
 	width: 270px;
 	margin-right: 40px;
-	background-color: goldenrod;
+	/*background-color: goldenrod;*/
 	float: left;
+	padding-top: 30px;
+	box-sizing: border-box;
 }
 .honor .honor-show ul li:nth-child(4){
 	margin-right: 0px;
 }
 .honor .honor-show ul li:last-child{
 	margin-right: 0px;
+}
+.honor .honor-show ul li p{
+	font-size: 14px;
+	text-align: center;
+	line-height: 3em;
+}
+.slocation{
+	height: 284px;
+	background-color: yellowgreen;
+}
+.slocation .slocation-text{
+	height: 90px;
+	background-color: palegoldenrod;
+	position: relative;
+}
+.slocation .slocation-text p{
+	font-size: 20px;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+}
+.slocation .slocation-show{
+	height: 194px;
 }
