@@ -708,7 +708,7 @@ a{
 	margin-right: 40px;
 	background-color: yellow;
 	position: relative;
-	overflow: hidden;
+	/*overflow: hidden;*/
 	
 }
 .teacher .teacherpic ul li:last-child{
@@ -727,10 +727,14 @@ a{
 	box-sizing: border-box;
 	display: none;
 }
-
-.teacher .teacherpic ul li img{
+.teacher .teacherpic ul li .modify{
 	width: 270px;
 	height: 180px;
+	overflow: hidden;
+}
+.teacher .teacherpic ul li .modify img{
+	width: 270px;
+	height: 380px;
 }
 .teacher .teacherpic ul li p.t1{
 	font-size: 14px;
