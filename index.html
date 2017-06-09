@@ -647,7 +647,10 @@
 				<ul style="background-color: red;">
 					<li>
 						<div class="n1">
+							<div class="suofang">
+								
 							<img src="img/111.jpg" />
+							</div>
 							<p class="nf1"><a href="#">平面设计软件全科班(白天班)</a></p>
 							<p class="nf2">优惠价：3880元</p>
 							<p class="nf3"><a href="#">查看</a> ></p>
@@ -1563,7 +1566,10 @@
 			<div class="productshow">
 				<ul>
 					<li>
+						<div class="suofang">
+							
 						<img src="img/pro1-1.jpg" />
+						</div>
 						<p class="p1">XXX学员作品</p>
 						<p class="p2">指导老师:武老师</p>
 						<span class=""><a href="#">查看</a> ></span>
@@ -1717,8 +1723,105 @@
 				</ul>
 			</div>
 		</div>
-		
-		
+		<div class="stars w">
+			<div class="job">
+			<p class="left">就业明星</p>
+			<p class="right"><a href="#">看全部</a><span class="fa fa-arrow-circle-o-right"></span> </p>
+			</div>
+			<div class="example">
+				<div class="prev">
+					
+				</div>
+				<div class="eg">
+					<ul>
+						<li>
+							<div class="headpic left">
+								<div class="spic">
+									<img src="img/star1-1.jpg" />
+								</div>
+								<p>盛倩雯</p>
+							</div>
+							<div class="words right">
+								<p class="major">UI交互设计专业</p>
+								<p class="feedback">如果不给自己一点拼搏的机会，你可能永远不会知道自己有多优秀。也希望每一个有梦想的孩子都可以勇敢的走上实现梦想的道路。</p>
+								<p class="company">就职:上海触****科技有限公司</p>
+							</div>
+						</li>
+						<li></li>
+						<li></li>
+					</ul>
+					<ul>
+						<li>
+							<div class="headpic left">
+								<div class="spic">
+									<img src="img/star2-1.jpg" />
+								</div>
+								<p>吴思成</p>
+							</div>
+							<div class="words right">
+								<p class="major">UI交互设计专业</p>
+								<p class="feedback">从毕业到现在，一路向前，几经周折，酸甜苦辣尽在心中不言处，最终也不负所望，通过自己的优势和努力以及非凡学院的助力...</p>
+								<p class="company">就职:上海容****科技有限公司</p>
+							</div>
+						</li>
+						<li></li>
+						<li></li>
+					</ul>
+					<ul>
+						<li>
+							<div class="headpic left">
+								<div class="spic">
+									<img src="img/star3-1.jpg" />
+								</div>
+								<p>吴思成</p>
+							</div>
+							<div class="words right">
+								<p class="major">UI交互设计专业</p>
+								<p class="feedback">从毕业到现在，一路向前，几经周折，酸甜苦辣尽在心中不言处，最终也不负所望，通过自己的优势和努力以及非凡学院的助力...</p>
+								<p class="company">就职:上海容****科技有限公司</p>
+							</div>
+						</li>
+						<li></li>
+						<li></li>
+					</ul>
+					<ul>
+						<li>
+							<div class="headpic left">
+								<div class="spic">
+									<img src="img/star4-1.jpg" />
+								</div>
+								<p>吴思成</p>
+							</div>
+							<div class="words right">
+								<p class="major">UI交互设计专业</p>
+								<p class="feedback">从毕业到现在，一路向前，几经周折，酸甜苦辣尽在心中不言处，最终也不负所望，通过自己的优势和努力以及非凡学院的助力...</p>
+								<p class="company">就职:上海容****科技有限公司</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="next">
+					
+				</div>
+			</div>
+		</div>
+		<div class="honor w">
+			<div class="honor-text">
+				<p>非凡荣誉</p>
+			</div>
+			<div class="honor-show">
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+		</div>
 		
 		
 		
@@ -1770,6 +1873,23 @@
 					//随li切换图片
 					$(".newclass .classpic ul").hide().eq(index).show();
 				});
+				//图片缩放
+				$(".newclass .classpic .suofang img").hover(function(){
+					$(this).stop().animate({
+				 		width:"370px" ,
+				 		height:"280px" ,
+				 		top:"-50px",
+				 		left:"-50px",
+				 	},1000);
+				},function(){
+					$(this).stop().animate({
+				 		width:"270px" ,
+				 		height:"180px" ,
+				 		top:"0px",
+				 		left:"00px",
+				 	},1000);
+				});
+				
 				
 				//今日报名的滚动条动画效果
 				var aLiNewCount = $(".newclass .newregister li").length;
@@ -1840,8 +1960,38 @@
 				 aUlproducts.hover(function(){
 				 	var index = $(this).index();
 				 	$(".students .productshow ul").hide().eq(index).show();
+				 	aUlproducts.children("a").css("color","#333").eq(index).css("color","red");
+				 } );
+				 
+				 //图片大小缩放
+				 
+				 $(".students .productshow li img").hover(function(){
+				 	$(this).stop().animate({
+				 		width:"354px" ,
+				 		height:"280px" ,
+				 		top:"-50px",
+				 		left:"-50px",
+				 	},1000);
 				 	
+				 	
+				 },function(){
+				 	$(this).stop().animate({
+				 		width:"254px" ,
+				 		height:"180px" ,
+				 		top:"0px",
+				 		left:"0px",
+				 	},1000)
 				 });
+				 
+				 //就业明星
+				 var index2 = 0;
+				 var aUlstars = $(".stars .example .eg ul");
+				 var starsCount = $(".stars .example .eg ul").length;
+				 setInterval(function(){
+				 	aUlstars.eq(index2).hide();
+				 	index2= (index2+1)%starsCount;
+				 	aUlstars.eq(index2).show();
+				 },2000);
 				 
 				 
 				 

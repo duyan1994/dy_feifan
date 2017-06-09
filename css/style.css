@@ -540,9 +540,16 @@ a{
 .newclass .classpic li .n1:hover{
 	border: 1px solid gainsboro;
 }
-.newclass .classpic li .n1 img{
+.newclass .classpic li .n1 .suofang{
 	width: 270px;
 	height: 180px;
+	overflow: hidden;
+	position: relative;
+}
+.newclass .classpic li .n1  img{
+	width: 270px;
+	height: 180px;
+	position: absolute;
 }
 .newclass .classpic li .n1 .nf1{
 	font-size: 16px;
@@ -808,7 +815,7 @@ a{
 	width: 270px;
 	height: 268px;
 	margin-right: 40px;
-	background-color: red;
+	/*background-color: red;*/
 	padding: 8px;
 	box-sizing: border-box;
 	position: relative;
@@ -816,9 +823,16 @@ a{
 .students .productshow ul li:last-child{
 	margin-right: 0px;
 }
+.students .productshow ul li .suofang{
+	width: 254px;
+	height: 180px;
+	overflow: hidden;
+	position: relative;
+}
 .students .productshow ul li img{
 	width: 254px;
 	height: 180px;
+	position: absolute;
 }
 .students .productshow ul li p.p1{
 	font-size: 14px;
@@ -838,4 +852,145 @@ a{
 	position: absolute;
 	right: 0px;
 	bottom: 5px;
+}
+
+/*就业明星*/
+.stars{
+	height: 300px;
+	background-color: goldenrod;
+}
+.stars .job{
+	height: 100px;
+	background-color: deepskyblue;
+	position: relative;
+}
+.stars .job p.left{
+	font-size: 20px;
+	position: absolute;
+	bottom: 16px;
+}
+.stars .job p.right{
+	font-size: 12px;
+	color: #595053;
+	position: absolute;
+	bottom: 16px;
+	right: 0px;
+}
+.stars .job p.right span{
+	margin-left: 5px;
+}
+
+.stars .example{
+	height: 200px;
+	/*background-color: red;*/
+	position: relative;
+}
+.stars .example .eg{
+	width: 1044px;
+	height: inherit;
+	position: absolute;
+	left: 78px;
+	/*background-color:royalblue ;*/
+}
+.stars .example .eg ul{
+	height: inherit;
+	display: none;
+}
+.stars .example .eg ul:first-child{
+	display: block;
+}
+.stars .example .eg ul li{
+	float: left;
+	list-style: none;
+	width: 305px;
+	height: inherit;
+	margin-right: 64px;
+	background-color: yellow;
+}
+.stars .example .eg ul li:last-child{
+	margin-right: 0px;
+}
+.stars .example .eg ul li .headpic{
+	height: inherit;
+	width: 76px;
+	/*background-color: lightcoral;*/
+	box-sizing: border-box;
+	padding-top: 30px;
+}
+.stars .example .eg ul li .headpic .spic{
+	width: 76px;
+	height: 76px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.stars .example .eg ul li .headpic .spic img{
+	width: 76px;
+	height: 76px;
+}
+.stars .example .eg ul li .headpic p{
+	text-align: center;
+	line-height: 3em;
+	font-size: 12px;
+}
+
+.stars .example .eg ul li .words{
+	width: 210px;
+	height: inherit;
+	/*background-color: yellowgreen;*/
+	position: relative;
+	box-sizing: border-box;
+	padding-top: 30px;
+}
+.stars .example .eg ul li .words .major{
+	font-size: 14px;
+}
+.stars .example .eg ul li .words .feedback{
+	font-size: 12px;
+	color: #8c9195;
+	line-height: 20px;
+	position: absolute;
+	top:70px ;
+}
+.stars .example .eg ul li .words .company{
+	font-size: 12px;
+	color: #8c9195;
+	position: absolute;
+	top: 167px;
+}
+
+/*非凡荣誉*/
+.honor{
+	height: 554px;
+	background-color: yellowgreen;
+}
+.honor .honor-text{
+	height: 64px;
+	background-color: palegoldenrod;
+	position: relative;
+}
+.honor .honor-text p{
+	font-size: 20px;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+}
+.honor .honor-show{
+	height: 490px;
+}
+.honor .honor-show ul{
+	height: 245px;
+}
+.honor .honor-show ul li{
+	list-style: none;
+	height: 245px;
+	width: 270px;
+	margin-right: 40px;
+	background-color: goldenrod;
+	float: left;
+}
+.honor .honor-show ul li:nth-child(4){
+	margin-right: 0px;
+}
+.honor .honor-show ul li:last-child{
+	margin-right: 0px;
 }
