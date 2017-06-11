@@ -1,0 +1,191 @@
+.main{
+	width: 1200px;
+	height: 1563px;
+}
+/*左侧导航*/
+.information-slide{
+	width: 222px;
+	height: 510px;
+	/*background-color: pink;*/
+	box-sizing: border-box;
+	border: 1px solid #ebebeb;
+}
+.information-slide .info-summary{
+	width: 222px;
+	height: 50px;
+	/*background-color: burlywood;*/
+	line-height: 50px;
+	font-size: 16px;
+	position: relative;
+	border-bottom: 1px solid #ebebeb;
+	padding-left: 24px;
+	box-sizing: border-box;
+}
+.information-slide .info-summary span{
+	color: #dd2c40;
+	display: inline-block;
+	position: absolute;
+	right: 42px;
+	top: 20px;
+}
+/*.information-slide .info-summary a:hover span:before{
+	content: "\f106";
+}*/
+
+.information-slide .info-major{
+	width: 222px;
+	height: 460px;
+	/*background-color: palegreen;*/
+}
+.information-slide .info-major ul{
+	width: 222px;
+	height: inherit;
+}
+.information-slide .info-major ul li{
+	list-style: none;
+	width: 222px;
+	height: 46px;
+	line-height: 46px;
+	font-size: 14px;
+	padding-left: 24px;
+	box-sizing: border-box;
+}
+.information-slide .info-major ul li a{
+	color: #475544;
+}
+.information-slide .info-major ul li:hover{
+	background-color: #f3f3f3;
+}
+.information-slide .info-major ul li a:hover{
+	color: #d9271d;
+}
+
+
+.detail{
+	width: 950px;
+	height: 1513px;
+	background-color: palegreen;
+	box-sizing: border-box;
+	border: 1px solid #EBEBEB;
+}
+.detail ul{
+	width: 750px;
+}
+.detail ul li{
+	width: 950px;
+	height: 1513px;
+	list-style: none;
+	background-color: yellowgreen;
+	display: none;
+}
+.detail ul li:first-child{
+	display: block;
+}
+
+.detail li .majorin{
+	width: 950px;
+	height: 50px;
+	background-color: burlywood;
+	line-height: 50px;
+	font-size: 16px;
+	box-sizing: border-box;
+	padding: 0px 20px;
+	border-bottom: 1px solid #EBEBEB;
+}
+.detail li .majorin a:hover{
+	color: #d9271d;
+}
+.detail li .majorin .search input{
+	width: 170px;
+	height: 20px;
+}
+.detail li .majorin .search span{
+	display: inline-block;
+	margin-left: 5px;
+	font-size: 12px;
+}
+
+.detail li .major-content{
+	width: 950px;
+	height: 1328px;
+	background-color: burlywood;
+	padding: 0px 20px;
+	box-sizing: border-box;
+}
+.detail li .major-content ul{
+	width: 910px;
+	height: inherit;
+	background-color: coral;
+	overflow: hidden;
+}
+.detail li .major-content ul li{
+	width: 910px;
+	height: 166px;
+	border-bottom: 1px solid #EBEBEB;
+	box-sizing: border-box;
+	background-color: pink;
+	display: block;
+	position: relative;
+}
+.detail li .major-content ul li .paragraph{
+	width: 720px;
+	height: inherit;
+	background-color: olivedrab;
+}
+.detail li .major-content ul li .paragraph p.m1{
+	font-size: 14px;
+	line-height: 60px;
+}
+.detail li .major-content ul li .paragraph p.m1 a:hover{
+	color:#d9271d ;
+}
+.detail li .major-content ul li .paragraph p.m2{
+	font-size: 12px;
+	line-height: 24px;
+}
+.detail li .major-content ul li .paragraph p.m2 a{
+	color: #899ba9;
+}
+.detail li .major-content ul li .paragraph p.m3{
+	color: #899ba9;
+	line-height: 34px;
+}
+.detail li .major-content ul li .paragraph p span.fa{
+	display: inline-block;
+	margin-left: 28px;
+	margin-right: 5px;
+	font-size: 16px;
+}
+
+
+.detail li .major-content ul li .picture{
+	width: 128px;
+	height: 128px;
+	background-color: royalblue;
+	position: absolute;
+	top: 19px;
+	right: 0px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.detail li .major-content ul li .picture img{
+	width: inherit;
+	height: inherit;
+}
+.detail li .button{
+	height: 135px;
+	width: 950px;
+	background-color: yellow;
+	text-align: center;
+	line-height: 135px;
+}
+.detail li .button button.fa{
+	width: 76px;
+	height: 40px;
+	font-size: 20px;
+}
+.detail li .button button.number{
+	width: 65px;
+	height: 40px;
+	font-size: 20px;
+}
