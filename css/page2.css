@@ -64,7 +64,7 @@
 .detail{
 	width: 950px;
 	height: 1513px;
-	background-color: palegreen;
+	/*background-color: palegreen;*/
 	box-sizing: border-box;
 	border: 1px solid #EBEBEB;
 }
@@ -75,7 +75,7 @@
 	width: 950px;
 	height: 1513px;
 	list-style: none;
-	background-color: yellowgreen;
+	/*background-color: yellowgreen;*/
 	display: none;
 }
 .detail ul li:first-child{
@@ -85,7 +85,7 @@
 .detail li .majorin{
 	width: 950px;
 	height: 50px;
-	background-color: burlywood;
+	/*background-color: burlywood;*/
 	line-height: 50px;
 	font-size: 16px;
 	box-sizing: border-box;
@@ -108,14 +108,14 @@
 .detail li .major-content{
 	width: 950px;
 	height: 1328px;
-	background-color: burlywood;
+	/*background-color: burlywood;*/
 	padding: 0px 20px;
 	box-sizing: border-box;
 }
 .detail li .major-content ul{
 	width: 910px;
 	height: inherit;
-	background-color: coral;
+	/*background-color: coral;*/
 	overflow: hidden;
 }
 .detail li .major-content ul li{
@@ -123,14 +123,14 @@
 	height: 166px;
 	border-bottom: 1px solid #EBEBEB;
 	box-sizing: border-box;
-	background-color: pink;
+	/*background-color: pink;*/
 	display: block;
 	position: relative;
 }
 .detail li .major-content ul li .paragraph{
 	width: 720px;
 	height: inherit;
-	background-color: olivedrab;
+	/*background-color: olivedrab;*/
 }
 .detail li .major-content ul li .paragraph p.m1{
 	font-size: 14px;
@@ -161,7 +161,7 @@
 .detail li .major-content ul li .picture{
 	width: 128px;
 	height: 128px;
-	background-color: royalblue;
+	/*background-color: royalblue;*/
 	position: absolute;
 	top: 19px;
 	right: 0px;
@@ -175,7 +175,7 @@
 .detail li .button{
 	height: 135px;
 	width: 950px;
-	background-color: yellow;
+	/*background-color: yellow;*/
 	text-align: center;
 	line-height: 135px;
 }
@@ -188,4 +188,158 @@
 	width: 65px;
 	height: 40px;
 	font-size: 20px;
+}
+
+
+/*page6-学院介绍*/
+.main6{
+	height: 1926px;
+	/*background-color: pink;*/
+}
+.main6 .school-summary{
+	width: 222px;
+	height:652px ;
+	border: 1px solid #EBEBEB;
+	box-sizing: border-box;
+	/*background-color: palegreen;*/
+}
+.main6 .school-summary .box{
+	width: inherit;
+	height: 50px;
+	line-height: 50px;
+	border-bottom: 1px solid #EBEBEB;
+	box-sizing: border-box;
+	font-size: 16px;
+	position: relative;
+	padding-left: 24px;
+}
+.main6 .school-summary .box span{
+	color: #DD2C40;
+	position: absolute;
+	top: 17px;
+	right: 42px;
+}
+.main6 .school-summary ul{}
+.main6 .school-summary ul li{
+	list-style: none;
+	height: 46px;
+	line-height: 46px;
+	padding-left: 24px;
+	font-size: 14px;
+}
+.main6 .school-summary ul li a{
+	color: #475544;
+}
+.main6 .school-summary ul li:hover{
+	background-color: #F3F3F3;
+}
+.main6 .school-summary ul li a:hover{
+	color:#d9271d ;
+}
+
+/*右侧school-info*/
+.main6 .school-info{
+	width: 950px;
+	height: 1870px;
+	box-sizing: border-box;
+	border: 1px solid #EBEBEB;
+	/*background-color: palegreen;*/
+}
+.main6 .school-info .title{
+	width: inherit;
+	height: 50px;
+	box-sizing: border-box;
+	border-bottom: 1px solid #ebebeb;
+	line-height: 50px;
+	font-size: 16px;
+	padding-left: 14px;
+}
+.main6 .school-info .contents{
+	width: inherit;
+	height: 640px;
+	padding: 40px 25px 0px;
+	/*background-color: gold;*/
+	box-sizing: border-box;
+}
+.main6 .school-info .contents .pic{
+	width: 518px;
+	height: 393px;
+	/*background-color: red;*/
+	display: inline-block;
+	float: left;
+}
+.main6 .school-info .contents .pic img{
+	width: 500px;
+	height: 375px;
+	
+}
+.main6 .school-info .contents p{
+	font-size: 14px;
+	line-height: 28px;
+	text-indent: 2em;
+}
+.main6 .school-info .development{
+	width: inherit;
+	height: 800px;
+	/*background-color: greenyellow;*/
+}
+.main6 .school-info .development p.tp{
+	font-size: 16px;
+	line-height: 60px;
+	/*background-color: red;*/
+}
+.main6 .school-info .development ul{
+	width: 950px;
+	height: 1110px;
+	/*background-color: cornflowerblue;*/
+	padding-left: 20px;
+	padding-right: 50px;
+	box-sizing: border-box;
+}
+.main6 .school-info .development ul li{
+	width: 433px;
+	height: 168px;
+	margin-right: 14px;
+	float: left;
+	list-style: none;
+	/*background-color: greenyellow;*/
+	margin-bottom: 10px;
+	position: relative;
+	border: 1px solid #ebebeb;
+	box-sizing: border-box;
+}
+.main6 .school-info .development ul li:nth-child(2n){
+	margin-right: 0px;
+}
+.main6 .school-info .development ul li h1{
+	font-size: 16px;
+	color: #ff303d;
+	text-align: center;
+	position: absolute;
+	left: 182px;
+	top: 30px;
+}
+.main6 .school-info .development ul li p span.fa{
+	font-size: 1px;
+}
+.main6 .school-info .development ul li p.para1{
+	font-size: 12px;
+	color: #302e19;
+	position: absolute;
+	top: 68px;
+	left: 8px;
+}
+.main6 .school-info .development ul li p.para2{
+	font-size: 12px;
+	color: #302e19;
+	position: absolute;
+	top: 96px;
+	left: 8px;
+}
+.main6 .school-info .development ul li p.para3{
+	font-size: 12px;
+	color: #302e19;
+	position: absolute;
+	top: 123px;
+	left: 8px;
 }
