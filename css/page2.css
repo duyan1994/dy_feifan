@@ -191,6 +191,166 @@
 }
 
 
+
+/*page4学员作品*/
+.main4{
+	height: 1464px;
+	/*background-color: pink;*/
+}
+/*侧边栏*/
+.main4 .aside-product{
+	width: 222px;
+	height: 326px;
+	/*background-color: palegreen;*/
+	box-sizing: border-box;
+	border: 1px solid #EBEBEB;
+}
+.main4 .aside-product .title{
+	width: inherit;
+	height: 50px;
+	line-height: 50px;
+	border-bottom: 2px solid #EBEBEB;
+	box-sizing: border-box;
+	text-indent: 24px;
+	font-size: 16px;
+	font-weight: bold;
+	position: relative;
+}
+.main4 .aside-product .title span{
+	color: #DD2C40;
+	position: absolute;
+	top: 17px;
+	right: 42px;
+}
+
+.main4 .aside-product ul{
+	width: inherit;
+	height: 276px;
+}
+.main4 .aside-product ul li{
+	list-style: none;
+	width: inherit;
+	height: 46px;
+	line-height: 46px;
+	text-indent: 24px;
+}
+.main4 .aside-product ul li:hover{
+	background-color: #F3F3F3;
+}
+.main4 .aside-product ul li a:hover{
+	color: #d9271d;
+}
+/*右侧*/
+.main4 .content-show{
+	width: 950px;
+	height: 1414px;
+	/*background-color: palegreen;*/
+	box-sizing: border-box;
+	border: 1px solid #EBEBEB;
+}
+.main4 .content-show .major-name{
+	width: inherit;
+	height: 50px;
+	line-height: 50px;
+	font-size: 16px;
+	font-weight: bold;
+	box-sizing: border-box;
+	border-bottom: 2px solid #EBEBEB;
+	padding-left: 24px;
+}
+
+.main4 .content-show .show{
+	width: inherit;
+	height: 1364px;
+	/*background-color: pink;*/
+	padding: 32px 43px;
+	box-sizing: border-box;
+}
+.main4 .content-show .show ul{
+	width: 864px;
+	height: 1300px;
+	/*background-color: yellowgreen;*/
+}
+.main4 .content-show .show ul li{
+	list-style: none;
+	float: left;
+	width: 288px;
+	height: 260px;
+	border: 1px solid white;
+	box-sizing: border-box;
+	padding: 8px;
+	position: relative;
+}
+.main4 .content-show .show ul li:hover{
+	border-color: #EBEBEB;
+}
+.main4 .content-show .show ul li .images{
+	width: 272px;
+	height: 180px;
+	position: relative;
+	overflow: hidden;
+}
+.main4 .content-show .show ul li .images img{
+	width: inherit;
+	height: inherit;
+	position: absolute;
+}
+.main4 .content-show .show ul li p.p1{
+    
+}
+.main4 .content-show .show ul li p.p2{
+	position: absolute;
+	bottom: 8px;
+	left: 8px;
+	font-size: 12px;
+	color: a4a4a4;
+}
+.main4 .content-show .show ul li p.p3{
+	position: absolute;
+	bottom: 8px;
+	right: 8px;
+	font-size: 12px;
+	color: a4a4a4;
+}
+.main4 .content-show .show ul li p.p3:hover a{
+	color:greenyellow ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*page6-学院介绍*/
 .main6{
 	height: 1926px;
