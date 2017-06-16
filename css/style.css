@@ -538,10 +538,10 @@ a{
 	top: 12px;
 	padding: 14px;
 	box-sizing: border-box;
-	
+	border: 1px solid white;
 }
 .newclass .classpic li .n1:hover{
-	border: 1px solid gainsboro;
+	border-color:gainsboro;
 }
 .newclass .classpic li .n1 .suofang{
 	width: 270px;
@@ -1356,4 +1356,12 @@ a{
 	bottom: 0px;
 	left: 370px;
 	
+}
+
+
+.aside-scroll{
+	position: absolute;
+	left: 10px;
+	top: 0px;
+	z-index: 999;
 }

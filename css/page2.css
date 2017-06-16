@@ -190,6 +190,184 @@
 	font-size: 20px;
 }
 
+/*page3*/
+.main3{
+	
+	height: 1858px;
+	position: relative;
+}
+/*左侧导航*/
+.main3 .aside{
+	width: 222px;
+	height: 510px;
+	/*background-color: pink;*/
+	box-sizing: border-box;
+	border: 1px solid #ebebeb;
+	
+}
+.main3 .aside .info-summary{
+	width: 222px;
+	height: 50px;
+	/*background-color: burlywood;*/
+	line-height: 50px;
+	font-size: 16px;
+	font-weight: bold;
+	position: relative;
+	border-bottom: 1px solid #ebebeb;
+	padding-left: 24px;
+	box-sizing: border-box;
+}
+.main3 .aside .info-summary span{
+	color: #dd2c40;
+	display: inline-block;
+	position: absolute;
+	right: 42px;
+	top: 20px;
+}
+
+.main3 .aside .info-major{
+	width: 222px;
+	height: 460px;
+	/*background-color: palegreen;*/
+}
+.main3 .aside .info-major ul{
+	width: 222px;
+	height: inherit;
+}
+.main3 .aside .info-major ul li{
+	list-style: none;
+	width: 222px;
+	height: 46px;
+	line-height: 46px;
+	font-size: 14px;
+	padding-left: 24px;
+	box-sizing: border-box;
+}
+.main3 .aside .info-major ul li a{
+	color: #475544;
+}
+.main3 .aside .info-major ul li:nth-child(3){
+	background-color: #f3f3f3;
+}
+.main3 .aside .info-major ul li:nth-child(3) a{
+	color: #d9271d;
+}
+
+
+.main3 .detail{
+	width: 950px;
+	height: 1720px;
+	/*background-color: palegreen;*/
+	box-sizing: border-box;
+	border: 1px solid #EBEBEB;
+	position: relative;
+}
+/*右侧头部*/
+.main3 .detail .page3-head{
+	width: inherit;
+	height: 50px;
+	/*background-color: pink;*/
+	box-sizing: border-box;
+	border-bottom: 1px solid #EBEBEB;
+}
+.main3 .detail .page3-head p{
+	display: inline-block;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 50px;
+	padding-left: 22px;
+}
+.main3 .detail .page3-head .search{
+	display: inline-block;
+	line-height: 50px;
+	padding-right: 22px;
+}
+.main3 .detail .page3-head .search input{
+	width: 170px;
+	height: 21px;
+}
+/*右侧body部分*/
+.main3 .detail .page3-body{
+	width: inherit;
+	height: 1415px;
+	/*background-color:palegreen;*/
+	box-sizing: border-box;
+	padding:42px 24px 0px ;
+	
+}	
+.main3 .detail .page3-body h1{
+	font-size: 20px;
+	text-align: center;
+	padding-bottom: 38px;
+}
+.main3 .detail .page3-body p.a1{
+	color: #95999c;
+	text-align: center;
+	padding-bottom: 36px;
+}
+.main3 .detail .page3-body p.a1 span{
+	display: inline-block;
+	padding-left: 60px;
+	padding-right: 7px;
+}
+.main3 .detail .page3-body p.a2{
+	text-indent: 2em;
+	line-height: 28px;
+	padding-bottom: 28px;
+}
+.main3 .detail .page3-body p a{
+	color: #57b7e9;
+	text-decoration: underline;
+}
+.main3 .detail .page3-body img{
+	width: 790px;
+	height: 430px;
+}
+
+.main3 .detail .page3-related{
+	width: 906px;
+	height: 255px;
+	/*background-color: palevioletred;*/
+	position: absolute;
+	left: 22px;
+	bottom: 0px;
+	box-sizing: border-box;
+	border-top: 1px solid #EBEBEB;
+	padding-top: 26px;
+}
+.main3 .detail .page3-related h3{
+	padding-bottom: 20px;
+}
+.main3 .detail .page3-related p{
+	padding-bottom: 20px;
+}
+.main3 .detail .page3-related p a{
+	color: #57b7e9;
+	text-decoration: underline;
+}
+.main3 .articles{
+	height: 138px;
+	width: 950px;
+	/*background-color: palegreen;*/
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	padding-left: 24px;
+	padding-top: 43px;
+	box-sizing: border-box;
+}
+.main3 .articles p{
+	padding-bottom: 22px;
+}
+.main3 .articles p a{
+	color: #57b7e9;
+	text-decoration: underline;
+}
+
+
+
+
+
 
 
 /*page4学员作品*/
@@ -248,6 +426,21 @@
 	box-sizing: border-box;
 	border: 1px solid #EBEBEB;
 }
+.main4 .content-show ul{
+	width: inherit;
+	/*height: 8484px;*/
+}
+.main4 .content-show ul li.page4-product{
+	width: 950px;
+	height: 1414px;
+	list-style: none;
+	/*background-color: pink;*/
+	display: none;
+}
+.main4 .content-show ul li.page4-product:first-child{
+	display: block;
+}
+
 .main4 .content-show .major-name{
 	width: inherit;
 	height: 50px;
@@ -316,14 +509,117 @@
 	color:greenyellow ;
 }
 
+/*page5*/
+.main5{
+	height: 2190px;
+	/*background-color: pink;*/
+}
+/*侧边栏*/
+.main5 .aside-product{
+	width: 222px;
+	height: 326px;
+	/*background-color: palegreen;*/
+	box-sizing: border-box;
+	border: 1px solid #EBEBEB;
+}
+.main5 .aside-product .title{
+	width: inherit;
+	height: 50px;
+	line-height: 50px;
+	border-bottom: 2px solid #EBEBEB;
+	box-sizing: border-box;
+	text-indent: 24px;
+	font-size: 16px;
+	font-weight: bold;
+	position: relative;
+}
+.main5 .aside-product .title span{
+	color: #DD2C40;
+	position: absolute;
+	top: 17px;
+	right: 42px;
+}
 
+.main5 .aside-product ul{
+	width: inherit;
+	height: 276px;
+}
+.main5 .aside-product ul li{
+	list-style: none;
+	width: inherit;
+	height: 46px;
+	line-height: 46px;
+	text-indent: 24px;
+}
+.main5 .aside-product ul li:first-child{
+	background-color: #F3F3F3;
+}
+.main5 .aside-product ul li:first-child a{
+	color: #d9271d;
+}
+/*右侧*/
+.main5 .content-show{
+	width: 950px;
+	height: 2090px;
+	/*background-color: palegreen;*/
+	box-sizing: border-box;
+	border: 1px solid #EBEBEB;
+}
+.main5 .content-show .major-name{
+	width: inherit;
+	height: 50px;
+	line-height: 50px;
+	font-size: 16px;
+	font-weight: bold;
+	box-sizing: border-box;
+	border-bottom: 2px solid #EBEBEB;
+	padding-left: 24px;
+}
 
-
-
-
-
-
-
+.main5 .content-show .show{
+	width: inherit;
+	height: 2040px;
+	/*background-color: pink;*/
+	padding-top: 48px;
+	padding-left: 24px;
+	padding-right: 24px;
+	/*border-bottom: 1px solid #EBEBEB;*/
+	box-sizing: border-box;
+	position: relative;
+}
+.main5 .content-show .show p.s1{
+	font-size: 14px;
+	color: #79addc;
+}
+.main5 .content-show .show p.s2{
+	font-size: 14px;
+	padding-top: 23px;
+}
+.main5 .content-show .show p.s3{
+	font-size: 14px;
+	padding-top: 12px;
+	
+}
+.main5 .content-show .show img{
+	margin: 10px 0px;
+}
+.main5 .content-show .show .link-article{
+	width: 902px;
+	height: 120px;
+	border-top: 1px solid #EBEBEB;
+	position: absolute;
+	bottom: 0px;
+	left: 24px;
+	box-sizing: border-box;
+	/*background-color: red;*/
+	padding-top: 32px;
+}
+.main5 .content-show .show .link-article p{
+	margin-bottom: 23px;
+}
+.main5 .content-show .show .link-article p a{
+	color: #49cadf;
+}
 
 
 
@@ -446,6 +742,7 @@
 .main6 .school-info .development p.tp{
 	font-size: 16px;
 	line-height: 60px;
+	text-indent: 24px;
 	/*background-color: red;*/
 }
 .main6 .school-info .development ul{
@@ -503,3 +800,4 @@
 	top: 123px;
 	left: 8px;
 }
+
