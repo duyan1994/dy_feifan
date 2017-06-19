@@ -2553,24 +2553,26 @@
 				 
 				 //就业明星
 				 var index2 = 0;
-				 var aUlstars = $(".stars .example .eg ul");
-				 var starsCount = $(".stars .example .eg ul").length;
-				 var timerStars= setInterval(function(){
+				 var aUlstars = $(".stars .example .eg ul"); //选中就业明星中所有的ul
+				 var starsCount = $(".stars .example .eg ul").length; //ul的个数
+				 //ul定时器选项卡
+				 var timerStars= setInterval(function(){ 
 				 	aUlstars.eq(index2).hide();
 				 	index2= (index2+1)%starsCount;
 				 	aUlstars.eq(index2).show();
-				 },2000);
+				 },5000);
 				
 				 //nextbtn
-				 $(".stars .example .nextbtn span").click(function(){
-				 	clearInterval(timerStars);
-				 	console.log(index2);
+				 var oStarPrevBtn = $(".stars .example .prevbtn span");
+				 var oStarnextBtn = $(".stars .example .nextbtn span");
+				oStarnextBtn.click(function(){
 				 	aUlstars.eq(index2).hide();
 				 	index2= (index2+1)%starsCount;
 				 	aUlstars.eq(index2).show();
+				 	clearInterval(timerStars);
 				 });
 				 // prevbtn
-				  $(".stars .example .prevbtn span").click(function(){
+				oStarPrevBtn.click(function(){
 				 	clearInterval(timerStars);
 				 	console.log(index2);
 				 	aUlstars.eq(index2).hide();
@@ -2579,23 +2581,19 @@
 				 });
 				 
 				 
-				 
-				 
-				 
-				 
 				 //合作企业
 				 var aUlcp = $(".cooperate .cooperate-show .middle li");
 
 				 var i =1;
 				$(".cooperate .cooperate-show .middle ul").animate({
 	                left:-i*(aUlcp.width()+17)+'px'					
-				},2000);
+				},5000);
 				setInterval(function(){
 					i = (i+1)% (aUlcp.length-6);
 					$(".cooperate .cooperate-show .middle ul").animate({
 	                     left:-i*(aUlcp.width()+17)+'px'					
-					},2000);
-				 },2000);
+					},5000);
+				 },5000);
 				 
 				 //合作企业的prev & next
 				 var ulcoop = $(".cooperate .cooperate-show .middle ul")
