@@ -7,6 +7,9 @@
 		<link rel="stylesheet" href="css/font-awesome.css" />
 	</head>
 	<body>
+		<div id="scroll"></div>
+			
+		
 		<div class="top">
 			<div class="w">
 				<ul class="nav left">
@@ -134,6 +137,8 @@
 			</ul>
 			<ul class="points">
 			</ul>
+			<div class="bannerprev"><a href="javascript:;"> < </a></div>
+			<div class="bannernext"><a href="javascript:;"> > </a></div>	
 		</div>
 		<div class="lesson w">
 			<div class="nav-lesson left">
@@ -1846,7 +1851,7 @@
 			</div>
 			<div class="example">
 				<div class="prevbtn left">
-					<a href="#"> <span class="fa fa-chevron-left"></span></a>
+					<a href="javascript:;"> <span class="fa fa-chevron-left"></span></a>
 				</div>
 				<div class="eg">
 					<ul>
@@ -1989,7 +1994,7 @@
 					</ul>
 				</div>
 				<div class="nextbtn right">
-					<a href="#"> <span class="fa fa-chevron-right"></span></a>
+					<a href="javascript:;"> <span class="fa fa-chevron-right"></span></a>
 				</div>
 			</div>
 		</div>
@@ -2136,9 +2141,9 @@
 				<p>合作企业</p>
 			</div>
 			<div class="cooperate-show">
-				<div class="prev left">
-				    <a href="#"> <span class="fa fa-chevron-left"></span></a>
-				</div>
+				<!--<div class="prev left">
+				    <a href="javascript:;"> <span class="fa fa-chevron-left"></span></a>
+				</div>-->
 				<div class="middle left">
 					<ul>
 						<li>
@@ -2200,9 +2205,9 @@
 						</li>
 					</ul>
 				</div>
-				<div class="next right">
-					 <a href="#"> <span class="fa fa-chevron-right"></span></a>
-				</div>
+				<!--<div class="next right">
+					 <a href="javascript:;"> <span class="fa fa-chevron-right"></span></a>
+				</div>-->
 			</div>
 		</div>
 		<div class="footer">
@@ -2384,23 +2389,65 @@
 		<script type="text/javascript" src="js/jquery-2.1.0.js" ></script>
 		<script type="text/javascript">
 			$(document).ready(function(){
+				$("#scroll").load("scroll.html");
 				//轮播图
 				var aLi = $(".banner li");
 				var imgCount =  $(".banner .images-lunbo li").length;
+				var bannerPrevBtn =$(".banner .bannerprev");
+				var bannernextBtn =$(".banner .bannernext");
+				var index = 0;
+				var bannerTimer=null;
 				
 				for (var i = 0 ; i<imgCount; i++) {
-					$(".banner .points").append("<li></li>")
+					$(".banner .points").append("<li data-index="+i+"></li>")
 				}
-				var aPoints = $(".banner .points li");
+				//使轮播点居中
 				$(".points").css("margin-left","-"+($(".points").width()/2)+"px");
+				var aPoints = $(".banner .points li");
 				aPoints.eq(0).addClass("active");
-				var index = 0;
-				setInterval(function(){
-					aLi.eq(index).fadeOut(500);
-					index =(index+1)%imgCount;
-					aLi.eq(index).fadeIn(500);
+				banner();
+				//当进入banner时，关闭定时器，移出时，定时器开启
+				$(".banner").hover(function(){
+					clearInterval(bannerTimer);
+					bannernextBtn.css("display","block");
+					bannerPrevBtn.css("display","block");
+				},function(){
+					banner();
+					bannernextBtn.css("display","none");
+					bannerPrevBtn.css("display","none");
+				});
+				//hover到某一个点上时，图片切换到当前页，active效果随之变化
+				aPoints.hover(function(){
+					var currentIndex = $(this).attr("data-index");
+					$(":animated").stop(true,true);
+					aLi.eq(index).hide();
+					index =currentIndex;
+					aLi.eq(index).show();
 					aPoints.removeClass("active").eq(index).addClass("active");
-				},1000);
+				});
+				//bannerPrevBtn ,bannerNextBtn 点击切换效果
+				bannernextBtn.click(function(){
+					aLi.eq(index).fadeOut(1000);
+					index =(index+1)%imgCount;
+					aLi.eq(index).fadeIn(1000);
+					aPoints.removeClass("active").eq(index).addClass("active");
+				});
+				bannerPrevBtn.click(function(){
+					aLi.eq(index).fadeOut(1000);
+					index =(index+imgCount-1)%imgCount;
+					aLi.eq(index).fadeIn(1000);
+					aPoints.removeClass("active").eq(index).addClass("active");
+				});
+				
+				//banner轮播的函数封装
+				function banner(){
+					bannerTimer=setInterval(function(){
+						aLi.eq(index).fadeOut(1000);
+						index =(index+1)%imgCount;
+						aLi.eq(index).fadeIn(1000);
+						aPoints.removeClass("active").eq(index).addClass("active");
+					},2000);
+				};
 				
 				//热门课程左侧二级菜单的hover效果
 				
@@ -2454,12 +2501,12 @@
 				var aLiNewCount = $(".newclass .newregister li").length;
 				var aLiNewWidth = $(".newclass .newregister li").width();
 				var ulWidth = (aLiNewWidth+30)*aLiNewCount;
-				console.log(ulWidth);
+//				console.log(ulWidth);
 				
 				$(".newclass .newregister ul").animate({
 					left:-1*ulWidth+"px"
 				},10000,"swing",function(){
-					console.log("ok");
+//					console.log("ok");
 					$(".newclass .newregister ul").css("left","1120px");
 				});
 				
@@ -2467,7 +2514,7 @@
 					$(".newclass .newregister ul").animate({
 					left:-1*ulWidth+"px"
 				},10000,"swing",function(){
-					console.log("ok");
+//					console.log("ok");
 					$(".newclass .newregister ul").css("left","1120px");
 				});
 				},10000);
@@ -2588,7 +2635,7 @@
 				$(".cooperate .cooperate-show .middle ul").animate({
 	                left:-i*(aUlcp.width()+17)+'px'					
 				},5000);
-				setInterval(function(){
+				var coopTimer= setInterval(function(){
 					i = (i+1)% (aUlcp.length-6);
 					$(".cooperate .cooperate-show .middle ul").animate({
 	                     left:-i*(aUlcp.width()+17)+'px'					
@@ -2596,15 +2643,13 @@
 				 },5000);
 				 
 				 //合作企业的prev & next
-				 var ulcoop = $(".cooperate .cooperate-show .middle ul")
-				 $(".cooperate .cooperate-show .next span").click(function(){
-				 	var uloffsetcoop = ulcoop.offset().left;
-				 	console.log(uloffsetcoop);
-				 	ulcoop.css("left",(uloffsetcoop+aUlcp.width()+17)+"px");
-				 	
-				 	
-				 	
-				 });
+//				 var ulcoop = $(".cooperate .cooperate-show .middle ul")
+//				 $(".cooperate .cooperate-show .next span").click(function(){
+//				 	clearInterval(coopTimer);
+//				 	var uloffsetcoop = ulcoop.offset().left;
+////				 	alert(uloffsetcoop);
+//				 	ulcoop.css("left",(uloffsetcoop+aUlcp.width()+17)+"px");
+//				 });
 				 
 				 
 				 

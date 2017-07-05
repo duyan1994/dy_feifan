@@ -199,6 +199,28 @@ a{
 	background-color: #da2b28;
 	border: 1px solid #da2b28;
 }	
+.banner .bannerprev,.banner .bannernext{
+	width: 40px;
+	height: 70px;
+	background-color: rgba(0,0,0,0.3);
+	position: absolute;
+	top: 140px;
+	line-height: 70px;
+	text-align: center;
+	display: none;
+}
+.banner .bannerprev a,.banner .bannernext a{
+	font-size: 30px;
+	color: white;
+	font-weight: 700;
+}
+.banner .bannerprev{
+	left: 0px;
+}
+.banner .bannernext{
+	right: 0px;
+}
+
 /*课程导航*/
 .lesson{
 	height: 456px;
@@ -928,7 +950,7 @@ a{
 	height: 70px;
 	position: absolute;
 	top: 65px;
-	background-color: yellow;
+	/*background-color: yellow;*/
 	line-height: 70px;
 	color: gainsboro;
 }
@@ -936,11 +958,11 @@ a{
 	right: 0px;
 }
 .stars .example .prevbtn span:hover{
-	background-color: rgba(0,0,0,0.7);
+	background-color: rgba(0,0,0,0.5);
 	color: white;
 }  
 .stars .example .nextbtn span:hover{
-	background-color: rgba(0,0,0,0.7);
+	background-color: rgba(0,0,0,0.5);
 	color: white;
 }
 .stars .example .eg ul{
@@ -1131,11 +1153,11 @@ a{
 /*合作企业*/
 .cooperate{
 	height: 300px;
-	background-color: palegoldenrod;
+	/*background-color: palegoldenrod;*/
 }
 .cooperate .cooperate-text{
 	height: 162px;
-	background-color: orangered;
+	/*background-color: orangered;*/
 	position: relative;
 }
 .cooperate .cooperate-text p{
@@ -1145,7 +1167,7 @@ a{
 }
 .cooperate .cooperate-show{
 	height: 84px;
-	background-color: yellowgreen;
+	/*background-color: yellowgreen;*/
 }
 .cooperate .cooperate-show .prev,.cooperate .cooperate-show .next{
 	width: 30px;
@@ -1153,6 +1175,9 @@ a{
 	height: inherit;
 	text-align: center;
 	position: relative;
+}
+.cooperate .cooperate-show .prev span:hover,.cooperate .cooperate-show .next span:hover{
+	background-color: rgba(0,0,0,0.5);
 }
 .cooperate .cooperate-show .prev span,.cooperate .cooperate-show .next span{
 	display: block;
@@ -1165,14 +1190,10 @@ a{
 	color: gainsboro;
 }
 
-
-
-
-
 .cooperate .cooperate-show .middle{
 	width: 1140px;
 	height: inherit;
-	background-color: brown;
+	/*background-color: brown;*/
 	overflow: hidden;
 	position: relative;
 }
@@ -1189,7 +1210,8 @@ a{
 	margin-right: 15px;
 	background-color: yellowgreen;
 	box-sizing: border-box;
-	border: 1px solid #dfdfdf;
+	/*border: 1px solid #dfdfdf;*/
+	
 }
 /*.cooperate .cooperate-show .middle ul li:nth-child(6){
 	margin-right: 0px;
